@@ -1,0 +1,24 @@
+{% load static %}
+{% load active_link_tags %}
+    <!-- Header Start -->
+    <header id="header">
+        <div class="container-fluid">
+
+            <div id="logo" class="pull-left">
+                <!-- Uncomment below if you prefer to use text logo -->
+                <!-- <h1><a href="index.html" class="scrollto">Tech Conference</a></h1> -->
+                <a href="{% url 'main' %}"><img src="{%static 'images/logo.png'%}" alt="Logo" /></a>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="{% active_link 'main' 'menu-active' strict=True %}"><a href="{% url 'main' %}">Home</a></li>
+                    <li class="{% active_link 'about' 'menu-active' %}"><a href="{% url 'about' %}">Event</a></li>
+                    <li class="{% active_link 'location' 'menu-active' %}"><a href="{% url 'location' %}">Location</a></li>
+                    
+                    <li class="{% active_link 'contact' 'menu-active' %}"><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header>

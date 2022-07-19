@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,900"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS File -->
+    <link
+      href="{%static 'vendor/bootstrap/css/bootstrap.min.css'%}"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries CSS Files -->
+    <link
+      href="{% static 'vendor/font-awesome/css/fo   nt-awesome.min.css'%}"
+      rel="stylesheet"
+    />
+    <link href="{%static 'vendor/animate/animate.min.css'%}" rel="stylesheet" />
+    <link
+      href="{%static 'vendor/ionicons/css/ionicons.min.css'%}"
+      rel="stylesheet"
+    />
+    <link
+      href="{%static 'vendor/owlcarousel/assets/owl.carousel.min.css'%}"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet File -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/styles.css' %}"
+    />
+
+    <title>Main Project</title>
+  </head>
+  <body>
+    {% block contents %}
+    
+    {% endblock contents %}
+  </body>
+</html>
